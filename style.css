@@ -1,0 +1,96 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav {
+    background-color: #000000;
+    color:#fff;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    padding: 30px 100px;
+    font-size: 25px;
+    align-items: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.help {
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.regis {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color:#fff
+}
+
+.help li:nth-child(3) a:hover {
+    text-decoration: underline;
+}
+
+.regis li:nth-child(1) p{
+    border: #fff solid 1px;
+    border-radius: 12px;
+    background-color: darkslategray;
+    padding: 10px;
+    
+    
+}
+
+
+
+
+.regis li:nth-child(2) {
+    border: #4C5FD5 2px solid;
+    background-color: #4C5FD5;
+    border-radius: 12px;
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.regis li:nth-child(2):hover {
+    cursor: pointer;
+    animation-name: SignIn;
+    animation-duration: 0.5s;
+    background-color: #fff;
+    color:#000000;
+    border-color: #fff;
+}
+
+
+
+
+
+
+/*Animations*/
+@keyframes SignIn {
+    from {
+        background-color: #4C5FD5;
+        color:#fff;
+        border-color: #4C5FD5;
+    }
+
+    to {
+        background-color: #fff;
+        color:#000000;
+        border-color: #fff;
+    }
+}
